@@ -3,14 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-  "start": "node server/server.js",
-  "server": "node server/server.js",
-  "client": "vite",
-  "dev": "concurrently \"npm:server\" \"npm:client\"",
-  "build": "vite build",
-  "preview": "vite preview"
-}
-
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "vite",
+    "dev": "concurrently \"npm:server\" \"npm:client\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
@@ -29,4 +28,3 @@
     "vite": "^5.0.0"
   }
 }
-
