@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { API_BASE } from '../config/api'
 
 export default function AdCopy() {
   const [form, setForm] = useState({ description: '', audience: '' })
@@ -10,7 +11,7 @@ export default function AdCopy() {
     setLoading(true)
     setResult(null)
     try {
-      const res = await fetch('http://localhost:4000/api/ad-copy', {
+      const res = await fetch(`${API_BASE}/api/ad-copy`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)

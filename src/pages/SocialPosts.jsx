@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { API_BASE } from '../config/api'
 
 export default function SocialPosts() {
   const [form, setForm] = useState({ businessType: '', product: '', tone: '', audience: '' })
@@ -10,7 +11,7 @@ export default function SocialPosts() {
     setLoading(true)
     setResult(null)
     try {
-      const res = await fetch('http://localhost:4000/api/social-posts', {
+      const res = await fetch(`${API_BASE}/api/social-posts`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)
