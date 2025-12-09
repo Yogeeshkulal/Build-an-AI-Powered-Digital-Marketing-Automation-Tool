@@ -30,3 +30,6 @@ Thumbs.db
 # Server logs
 server.log
 
+# Chat history (user data)
+server/chatStore.json
+

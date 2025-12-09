@@ -15,6 +15,7 @@ export default function Navbar() {
           <Link to="/" className={linkClass('/')}>Social Media</Link>
           <Link to="/ad-copy" className={linkClass('/ad-copy')}>Ad Copy</Link>
           <Link to="/email" className={linkClass('/email')}>Email Writer</Link>
+          <Link to="/chat" className={linkClass('/chat')}>AI Chat</Link>
         </nav>
       </div>
     </header>

@@ -7,6 +7,7 @@ const path = require('path');
 const socialPosts = require('./routes/socialPosts');
 const adCopy = require('./routes/adCopy');
 const emailCampaign = require('./routes/emailCampaign');
+const chat = require('./routes/chat');
 const { listAvailableModels } = require('./gemini');
 
 const app = express();
@@ -18,6 +19,7 @@ app.use(express.json());
 app.use('/api/social-posts', socialPosts);
 app.use('/api/ad-copy', adCopy);
 app.use('/api/email-campaign', emailCampaign);
+app.use('/api/chat', chat);
 
 app.get('/', (req, res) => {
   res.json({ message: 'AI Marketing Automation API' });
