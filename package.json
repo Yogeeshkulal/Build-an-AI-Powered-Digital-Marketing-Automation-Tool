@@ -6,7 +6,9 @@
     "start": "node server/server.js",
     "server": "node server/server.js",
     "client": "vite",
-    "dev": "concurrently \"npm:server\" \"npm:client\""
+    "dev": "concurrently \"npm:server\" \"npm:client\"",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "cors": "^2.8.5",
